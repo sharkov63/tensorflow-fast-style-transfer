@@ -70,10 +70,10 @@ Click on result images to see full size images.
 ### Prerequisites
 1. Tensorflow
 2. Python packages : numpy, scipy, PIL(or Pillow), matplotlib
-3. Pretrained VGG19 file : [imagenet-vgg-verydeep-19.mat](http://www.vlfeat.org/matconvnet/models/imagenet-vgg-verydeep-19.mat)  
+3. (for training only) Pretrained VGG19 file : [imagenet-vgg-verydeep-19.mat](http://www.vlfeat.org/matconvnet/models/imagenet-vgg-verydeep-19.mat)  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* Please download the file from link above.  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* Save the file under `pre_trained_model`  
-4. MSCOCO train2014 DB : [train2014.zip](http://msvocds.blob.core.windows.net/coco2014/train2014.zip)  
+4. (for training only) MSCOCO train2014 DB : [train2014.zip](http://msvocds.blob.core.windows.net/coco2014/train2014.zip)  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* Please download the file from link above.  (Notice that the file size is over 12GB!!)  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* Extract images to `train2014`.
 
@@ -126,6 +126,14 @@ python run_test.py --content <content file> --style_model <style-model file> --o
 
 *Optional* :  
 * `--max_size`: Maximum width or height of the input images. *None* do not change image size. *Default*: `None`
+
+### Run Sequence
+
+`run_sequence.py` processes all images in the input folder and saves them in the output folder.
+
+```
+python run_sequence.py --content <input folder> --style_model <style-model file> --output <output folder>
+```
 
 ## Train time
 
