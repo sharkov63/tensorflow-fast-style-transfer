@@ -68,7 +68,7 @@ Click on result images to see full size images.
 ## Usage
 
 ### Prerequisites
-1. Tensorflow
+1. Tensorflow (1.5 recommended)
 2. Python packages : numpy, scipy, PIL(or Pillow), matplotlib
 3. (for training only) Pretrained VGG19 file : [imagenet-vgg-verydeep-19.mat](http://www.vlfeat.org/matconvnet/models/imagenet-vgg-verydeep-19.mat)  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* Please download the file from link above.  
